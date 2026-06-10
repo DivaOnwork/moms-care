@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mom's care</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+        
+            .hero {
+                text-align: center;
+                padding: 80px 20px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero span {
+                color: #e86011;
+
+            }
+            .badge {
+               background: #FAECE7;
+               color: #993C1D;
+               padding: 4px 14px;
+               border-radius: 20px;
+               font-size: 13px; 
+            }
+            .tagline {
+                font-size: 18px;
+                color: #555;
+                margin-top: 20px;
+            }
+            button {
+                background: #D85A30;
+                color: white;
+                border: none;
+                padding: 12px 28px;
+                border-radius: 8px;
+                font-size: 16px;
+                margin-top: 20px;
+                cursor: grab;
+            }
+            .waitlist {
+                text-align: center;
+                padding: 60px 20px;
+            }
+
+            .waitlist h2 {
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+
+            .waitlist p {
+                color: gray;
+                margin-bottom: 24px;
+            }   
+
+            .input-row {
+                display: flex;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            .input-row input {
+                padding: 10px 14px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                font-size: 14px;
+                width: 260px;
+            }
+
+            #success-msg {
+                display: none;
+                color: #D85A30;
+                margin-top: 12px;
+            }
+            .step-num {
+                width: 32px;
+                height: 32px;
+                background: #FAECE7;
+                color: #D85A30;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 12px;
+            }
+            .how {
+                background: #f9f9f9;
+                padding: 60px 20px;
+                text-align: center
+            }
+
+            .how h2 {
+                font-size: 28px;
+                margin-bottom: 40px;
+            }
+
+            .steps {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .step {
+                background: white;
+                border: 1px solid #eee;
+                border-radius: 12px;
+                padding: 20px;
+                width: 160px;
+            }
+
+            .step h3 {
+                font-size: 14px;
+                margin-bottom: 6px;
+            }
+
+            .step p {
+                font-size: 12px;
+                color: gray;
+            }
+            footer {
+                text-align: center;
+                padding: 10px;
+                font-size: 13px;
+                color: gray;
+                border-top: 1px solid #eee;
+            }
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 16px 40px;
+                border-bottom: 1px solid #eee;
+            }
+
+            .nav-logo {
+                font-size: 18px;
+                font-weight: bold;
+                color: #D85A30;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .nav-links {
+                display: flex;
+                gap: 24px;
+            }
+
+            .nav-links a {
+                text-decoration: none;
+                color: #555;
+                font-size: 14px;
+            }
+            .nav-links a:hover {
+                color: #D85A30;
+            }
+            .nav-logo img {
+                height: 40px;
+                width: 40px;
+                object-fit: contain;
+            } 
+            .splash {
+                position:fixed;
+                inset:0;
+                background:white;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                z-index: 999;
+                transition: opacity 0.8s ease;
+            }
+
+            .splash img {
+                height: 100px;
+                width: 100px;
+                object-fit: contain;
+            }
+
+            .splash p {
+                margin-top: 12px;
+                font-size: 22px;
+                font-weight: bold;
+                color: #D85A30;
+
+            }
+            .splash.hide {
+                opacity: 0;
+                pointer-events: none;
+            }
+            </style>       
+    </head>
+
+        <body>
+            <div class="splash">
+                <img src="logo.png" alt="Mom's care" />
+                <p>Mom's care</p>
+            </div>
+            <nav class="navbar">
+                <div class="nav-logo">
+                <img src="logo.png" alt="Mom's care" />
+                Mom's care
+                </div>
+                <div class="nav-links">
+                    <a href="#how">How it works</a>
+                    <a href="#waitlist">Join Us</a>
+                </div>
+            </nav>
+            <section class="hero">
+                <p class="badge">Coming Soon for students</p>
+                <h1>Feel like <span>Mom</span> is always with you</h1>
+                <p class="tagline">Living away from home? We bring the warmth of home to you</p>
+                <button>Join the Waitlist</button>
+            </section>
+            
+
+
+      
+            
+        <section class="how" id="how">
+            <h2>How it works</h2>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">  1</div>
+                    <h3>Upload Mom's photo</h3>
+                    <p>Just one photo and her character is ready</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-num">  2</div>
+                    <h3>Set her reminders</h3>
+                    <p>Food, homework, sleep _ she'll remind you</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-num">  3</div>
+                     <h3>She pops up</h3>
+                    <p>Mid-scroll, she appears with her message</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-num">  4</div>
+                    <h3>Feel less alone</h3>
+                    <p>That ghar wali warmth, right on your phone</p>
+                </div>
+            </div>
+        </section>
+        <section class="waitlist" id="waitlist">
+            <h2>Be the first to know</h2>
+            <p>We are building this with love. Join the waitlist and we will let you know when it is ready.</p>
+
+            <div class="input-row">
+            <input type="email" placeholder="your@email.com" id="email-input" />
+            <button onclick="handleWaitlist()">Notify me</button>
+            </div>
+
+             <p id="success-msg">Done! We will reach out soon. 🎉</p>
+        </section>
+
+        <footer>
+            <p>Made with love, for every student missing home. 🧡</p>
+        </footer>
+        <script>
+            function handleWaitlist() {
+            var input = document.getElementById('email-input');
+            if (input.value.includes('@')) {
+            fetch('https://formspree.io/f/xwvjqnpg', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email: input.value })
+                }).then(function() {
+                document.getElementById('success-msg').style.display = 'block';
+                input.value = '';
+                });
+            } else {
+        input.style.borderColor = 'red';
+            }
+        }
+
+            window.addEventListener('load', function() {
+            setTimeout(function() {
+            document.querySelector('.splash').classList.add('hide'); }, 1000);
+        });
+        </script>
+        </body>   
+</html>
